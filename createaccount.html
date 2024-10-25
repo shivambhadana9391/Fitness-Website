@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATEACCOUNT</title>
+    <style>
+      
+       body{
+        background-color: gray;
+        display: flex;
+        margin-top: 150px;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+       
+       }
+       
+       
+        form{
+            border:2px solid #f9ac54;
+            box-shadow: 0 0 25px 3px #f9ac54 ;
+            border-radius: 10px;
+            padding: 50px;
+        }
+        
+       
+       input{
+        border: 3px solid rgb(67, 61, 67);
+        border-radius: 5px;
+
+       }
+       input:hover{
+        transform: scale(1.5);
+       }
+       input:focus{
+        background-color: burlywood;
+       }
+       input[type="submit"]:hover{
+        background-color: green;
+        transform:scale(2);
+       }
+    </style>
+</head>
+<body>
+  <script src="createaccount.js"></script>
+   
+    <center><form onsubmit="return data()" action="welcome page of form.html" method="get" >
+        <h1>
+            Create  Account
+        </h1>
+        <label for="name" >UserID:</label><br>
+        <input type="text" id="name" name="myname" ><br><br> 
+
+
+        <label for="number" >Mobile Number:</label><br>
+        <input type="text" id="number" name="mynumber" ><br><br>
+
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="mypassword" > <br><br>
+
+
+        <label for="password"> Confirm Password:</label><br>
+        <input type="password" id="confirmpassword" name="mypassword" > <br><br>
+
+
+        <input type="submit" value="Submit now" >
+    </form></center>
+</body>
+</html>

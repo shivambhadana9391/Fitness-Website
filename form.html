@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(255, 94, 0, 0.9), rgba(0, 0, 0, 0.85)), url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+       
+        .signin-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.85);
+            border-radius: 12px;
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+            width: 100%;
+            max-width: 400px;
+        }
+
+      
+        .signin-container h2 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            color: #ff7e29;
+        }
+
+     
+        .input-group {
+            width: 100%;
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 50px 12px 20px;
+            font-size: 16px;
+            background-color: #333;
+            border: none;
+            border-radius: 30px;
+            color: #fff;
+        }
+
+        .input-group input::placeholder {
+            color: #aaa;
+        }
+
+        
+        .input-group i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #ff7e29;
+        }
+
+        .input-group button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 30px;
+            background-color: #ff7e29;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.4s ease;
+        }
+
+        .input-group button:hover {
+            background-color: #ff9c5b;
+        }
+
+      
+        .signin-container a {
+            color: #ff7e29;
+            text-decoration: none;
+            display: block;
+            margin-top: 20px;
+        }
+
+        .signin-container a:hover {
+            text-decoration: underline;
+        }
+
+       
+        .signin-container p {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .signin-container p a {
+            color: #ff7e29;
+            font-weight: bold;
+        }
+
+      
+        @media screen and (max-width: 768px) {
+            .signin-container {
+                padding: 30px;
+            }
+
+            .signin-container h2 {
+                font-size: 26px;
+            }
+
+            .input-group input {
+                font-size: 14px;
+                padding: 10px 45px 10px 15px;
+            }
+
+            .input-group button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="signin-container">
+        <h2>Sign In</h2>
+        <form  action="welcome page of form.html" method="get">
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <i class="fa fa-envelope"></i>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <i class="fa fa-lock"></i>
+            </div>
+    
+            <div class="input-group">
+                <button type="submit">Sign In</button>
+            </div>
+            
+        </form>
+    </div>
+    
+  
+</body>
+</html>
